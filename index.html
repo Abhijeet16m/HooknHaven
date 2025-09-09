@@ -24,6 +24,7 @@
 
         main img {
             width: 384px;
+            height: 100vh;
         }
 
         .instagram-btn {
@@ -45,6 +46,21 @@
             background: #C13584;
             /* darker pink */
         }
+        @media (max-width: 950px) {
+        main {
+            flex-direction: column; /* stack images */
+            justify-content: flex-start;
+            align-items: center;
+            height: 100%;
+        }
+
+        main img {
+            width: 100%; /* cover full width */
+            max-width: 100%;
+            height: auto;
+        }
+
+    }
     </style>
 </head>
 
@@ -64,3 +80,4 @@
 
 
 </html>
+
